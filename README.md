@@ -236,9 +236,72 @@ ________________________________________
 ### Punto 4.
 
 ```python
+import math
+
+def aproximacion_coseno(x, n):
+    # Inicializar la aproximación y las variables para el cálculo de términos
+    aproximacion = 0
+    termino = 1  # El primer término de la serie es 1 (x^0 / 0!)
+    signo = 1  # Para alternar los signos en la serie
+
+    for i in range(n):
+        aproximacion += signo * termino
+        signo *= -1  # Alterna el signo
+        # Actualizar el término siguiente de la serie: x^(2i) / (2i)!
+        termino *= (x ** 2) / ((2 * i + 1) * (2 * i + 2))
+
+    return aproximacion
+
+def calcular_error(x, error_deseado):
+    # Calcular el valor real de cos(x)
+    valor_real = math.cos(x)
+    n = 1
+    
+    while True:
+        valor_aproximado = aproximacion_coseno(x, n)
+        diferencia = abs(valor_real - valor_aproximado)
+        error_relativo = diferencia / abs(valor_real)
+        
+        if error_relativo <= error_deseado:
+            return n
+        
+        n += 1
+
+# Ejemplo de uso
+x = float(input("Ingresa un valor para x: "))
+
+# Calcular para diferentes errores deseados
+error_10 = calcular_error(x, 0.1)
+print(f"Para un error del 10%, se necesitan {error_10} términos.")
+
+error_1 = calcular_error(x, 0.01)
+print(f"Para un error del 1%, se necesitan {error_1} términos.")
+
+error_01 = calcular_error(x, 0.001)
+print(f"Para un error del 0.1%, se necesitan {error_01} términos.")
+
+error_001 = calcular_error(x, 0.0001)
+print(f"Para un error del 0.01%, se necesitan {error_001} términos.")
 ```
 
 **Explicacion:**
+
+Para este code se utilizó:
+
+- Función aproximacion_coseno(x, n): Calcula la aproximación de la función coseno usando n términos de la serie de Taylor.
+
+- Función calcular_error(x, error_deseado): Calcula cuántos términos son necesarios en la serie para que el error relativo entre el coseno calculado y el real sea menor o igual al error_deseado.
+
+Ejemplo: Se llama a calcular_error para diferentes errores deseados (10%, 1%, 0.1%, 0.01%) y se imprime cuántos términos son necesarios en cada caso.
+
+Este código evita el uso de listas o strings, cumpliendo con tu requisito.
+
+
+
+
+
+
+
 ________________________________________
 
 ### Punto 5.
