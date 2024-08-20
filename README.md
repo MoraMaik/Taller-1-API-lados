@@ -78,7 +78,7 @@ else:
     print("La matriz no es magica.")
 ```
 
-**Explicacion:**
+**Explicación:**
 1. Funcion `es_matriz_magica(matriz)`:
    + Parametro: `matriz` es una lista de listas que representa la matriz cuadrada.
    + Variable `n`: Determina el tamaño de la matriz `(n x n)`.
@@ -125,7 +125,7 @@ while numero > 0:
 digitos.reverse()
 ```
 
-**Explicacion:**
+**Explicación:**
 
 El objetivo de este programa es tomar un numero entero `n` y separar todos los digitos que lo componen. Para lograrlo, el programa utiliza los operadores modulo `(%)` y division entera `(//)`. 
 + **Entrada**: Se solicita al usuario que ingrese un numero entero mediante `input()` y se convierte a entero con `int()`.
@@ -171,8 +171,9 @@ while parte_decimal > 0:
     parte_decimal -= digito
 ```
 
-**Explicacion:**
-Este programa en Python separa un número flotante en su parte entera y decimal, y luego imprime los dígitos de ambas partes.
+**Explicación:**
+
+Para la realización de este programa se separa un número flotante en su parte entera y decimal, y luego imprime los dígitos de ambas partes.
 
 Ingreso: El usuario ingresa un número flotante.
 Separación: La parte entera se obtiene con int(), y la decimal restando la parte entera del número original.
