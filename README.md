@@ -176,7 +176,9 @@ while parte_decimal > 0:
 Para la realización de este programa se separa un número flotante en su parte entera y decimal, y luego imprime los dígitos de ambas partes.
 
 Ingreso: El usuario ingresa un número flotante.
+
 Separación: La parte entera se obtiene con int(), y la decimal restando la parte entera del número original.
+
 Descomposición:
 - Para la parte entera, se extraen los dígitos uno por uno usando el operador % 10 y se eliminan con // 10.
 - Para la parte decimal, se multiplica por 10, se extrae el dígito más significativo, y se elimina del número.
