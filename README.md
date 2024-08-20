@@ -224,7 +224,7 @@ else:
     print("Los numeros no son espejos.")
 ```
 
-**Explicacion:**
+**Explicación:**
 Un numero espejo es un par de numeros donde uno es la version invertida del otro. Por ejemplo, 123 y 321 son numeros espejos porque si se invierte el numero 123, se obtiene 321.
 
 Para resolver el problema:
@@ -284,7 +284,7 @@ error_001 = calcular_error(x, 0.0001)
 print(f"Para un error del 0.01%, se necesitan {error_001} términos.")
 ```
 
-**Explicacion:**
+**Explicación:**
 
 Para este code se utilizó:
 
