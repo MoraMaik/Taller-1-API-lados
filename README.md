@@ -187,6 +187,7 @@ Este proceso se repite hasta que no queden dígitos en ambas partes.
 
 _________________________________________
 ### Punto 3. 
+
 Desarrollar un programa que permita ingresar dos numeros enteros y determinar si se tratan de numeros espejos, definiendo numeros espejos como dos numeros a y b tales que a se lee de izquierda a derecha igual que se lee b de derecha a izquierda, y viceversa.
 ```python
     # inicio de la variable que almacenara el numero invertido
@@ -381,6 +382,29 @@ ________________________________________
 ### Punto 6.
 
 ```python
+def hay_repetidos(a, b, c, d, e):
+    # Comparar cada elemento con los demás usando el operador 'in'
+    if a == b:
+        return 1
+    if a == c:
+        return 1
+    if a == d:
+        return 1
+    if a == e:
+        return 1
+    if b == c:
+        return 1
+    if b == d:
+        return 1
+    if b == e:
+        return 1
+    if c == d:
+        return 1
+    if c == e:
+        return 1
+    if d == e:
+        return 1
+    return 0
 ```
 
 **Explicacion:**
