@@ -146,6 +146,29 @@ ________________________________________
 ### Punto 2.
 
 ```python
+# Ingresar un número flotante
+n = float(input("Ingresa un número flotante: "))
+
+# Obtener la parte entera
+parte_entera = int(n)
+
+# Calcular la parte decimal restando la parte entera
+parte_decimal = n - parte_entera
+
+# Mostrar los dígitos de la parte entera
+print("Dígitos de la parte entera:")
+while parte_entera > 0:
+    digito = parte_entera % 10
+    print(digito)
+    parte_entera //= 10
+
+# Mostrar los dígitos de la parte decimal
+print("Dígitos de la parte decimal:")
+while parte_decimal > 0:
+    parte_decimal *= 10
+    digito = int(parte_decimal)
+    print(digito)
+    parte_decimal -= digito
 ```
 
 **Explicacion:**
