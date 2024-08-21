@@ -460,6 +460,18 @@ ________________________________________
 ### Punto 8.
 
 ```python
+def diferenciar_elementos(lista1, lista2):
+    return [elemento for elemento in lista1 if elemento not in lista2]
+
+lista1 = [int(x) for x in input("Por favor, ingrese los elementos de la primera lista (separados por espacio): ").split()]
+lista2 = [int(x) for x in input("Por favor, ingrese los elementos de la segunda lista (separados por espacio): ").split()]
+
+elementos = diferenciar_elementos(lista1, lista2)
+
+if elementos:
+    print("Los elementos que tiene la primera lista que no tiene la segunda lista son:", elementos)
+else:
+    print("La primera lista no contiene elementos que no tenga la segunda lista.")
 ```
 
 **Explicacion:**
@@ -467,14 +479,74 @@ ________________________________________
 ### Punto 9.
 
 ```python
+import numpy as np
+
+# Ingreso de números
+numeros = [float(input(f"Por favor ingrese el número {i+1}: ")) for i in range(5)]
+
+# Cálculo de operaciones
+promedio = np.mean(numeros)
+mediana = np.median(numeros)
+promedio = np.prod(numeros) ** (1/len(numeros))
+ascendente = np.sort(numeros)
+descendente = np.sort(numeros)[::-1]
+potencia = max(numeros) ** min(numeros)
+raiz_cubica = np.cbrt(min(numeros))
+
+# Impresión de resultados
+print(f"Promedio: {promedio}")
+print(f"Mediana: {mediana}")
+print(f"Promedio: {promedio}")
+print(f"Números en orden ascendente: {ascendente}")
+print(f"Números en orden descendente: {descendente}")
+print(f"La potencia del mayor número elevado al menor número: {potencia}")
+print(f"La raíz cúbica del menor número: {raiz_cubica}")
+
 ```
 
 **Explicacion:**
 ________________________________________
 ### Punto 10.
+**Acumulación**
 
 ```python
+def multiplos_3_ac(lista):
+    # Indicamos una lista vacía para almacenar los múltiplos de 3
+    lista_multiplos_de_3 = []
+    
+    # Recorremos cada número en la lista proporcionada
+    for numero in lista:
+        # Verificamos si el número es múltiplo de 3
+        if numero % 3 == 0:
+            # Si es múltiplo de 3, se añade a la lista de resultados
+            lista_multiplos_de_3.append(numero)
+    
+    # Lo devolvemos a la lista de múltiplos de 3
+    return lista_multiplos_de_3
+
+# Ejemplo
+lista_a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+resultado = multiplos_3_ac(lista_a)
+print(resultado) 
 ```
+**Explicacion:**
+
+
+
+
+**Compresión de listas**
+
+```python
+def multiplos_3_comprension(lista):
+    # Usamos una comprensión de listas para filtrar los múltiplos de 3
+    return [numero for numero in lista if numero % 3 == 0]
+
+# Ejemplo
+lista_a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+resultado = multiplos_3_comprension(lista_a)
+print(resultado) 
+```
+
 
 **Explicacion:**
 ________________________________________
