@@ -180,7 +180,7 @@ Ingreso: El usuario ingresa un número flotante.
 Separación: La parte entera se obtiene con `int()`, y la decimal restando la parte entera del número original.
 
 Descomposición:
-- Para la parte entera, se extraen los dígitos uno por uno usando el operador % 10 y se eliminan con // 10.
+- Para la parte entera, se extraen los dígitos uno por uno usando el operador `% 10` y se eliminan con `// 10`.
 - Para la parte decimal, se multiplica por 10, se extrae el dígito más significativo, y se elimina del número.
   
 Este proceso se repite hasta que no queden dígitos en ambas partes.
