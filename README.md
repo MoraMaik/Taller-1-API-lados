@@ -382,32 +382,46 @@ ________________________________________
 ### Punto 6.
 
 ```python
-def hay_repetidos(a, b, c, d, e):
-    # Comparar cada elemento con los demás usando el operador 'in'
-    if a == b:
-        return 1
-    if a == c:
-        return 1
-    if a == d:
-        return 1
-    if a == e:
-        return 1
-    if b == c:
-        return 1
-    if b == d:
-        return 1
-    if b == e:
-        return 1
-    if c == d:
-        return 1
-    if c == e:
-        return 1
-    if d == e:
-        return 1
-    return 0
+# Inicializamos una variable que indica si hay repetidos
+hay_repetidos = False
+
+# Leemos la cantidad de números a ingresar
+cantidad = int(input("Ingrese la cantidad de números: "))
+
+# Iteramos sobre cada número
+for i in range(cantidad):
+    # Pedimos al usuario que ingrese un número
+    numero = int(input(f"Ingrese el número {i + 1}: "))
+    
+    # Variable auxiliar para almacenar el siguiente número a comparar
+    numero_siguiente = numero
+    
+    # Comparación entre el número actual y los números siguientes
+    for j in range(i + 1, cantidad):
+        numero_siguiente = int(input(f"Ingrese nuevamente el número {j + 1} para comparar: "))
+        
+        # Si encontramos un número igual al actual, marcamos como repetido
+        if numero == numero_siguiente:
+            hay_repetidos = True
+    
+    # Si se encontró un repetido, salimos del ciclo
+    if hay_repetidos:
+        break
+
+# Imprimimos el resultado
+if hay_repetidos:
+    print("Existen elementos repetidos.")
+else:
+    print("No existen elementos repetidos.")
 ```
 
 **Explicación:**
+Para este programa utilizamos: 
+1. Entrada del número de elementos: Primero, pedimos al usuario que ingrese la cantidad de números que desea ingresar.
+
+2. Comparación de elementos: Para cada número, comparamos ese número con todos los números que siguen. Si encontramos un número que ya se ingresó antes, cambiamos la variable hay_repetidos a True.
+
+3. Salida del resultado: Finalmente, dependiendo de si se encontraron elementos repetidos o no, mostramos el mensaje correspondiente.
 ________________________________________
 ### Punto 7.
 
