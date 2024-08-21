@@ -453,7 +453,7 @@ Este código verifica si alguna de las cinco cadenas tiene dos o más vocales :
 
 - `contar_vocales(cadena)`: Recorre cada carácter de la cadena y cuenta vocales. Si encuentra dos o más, retorna el conteo; si no, sigue contando hasta terminar.
 
-- `buscar_cadena_con_vocales`(cadena1, cadena2, cadena3, cadena4, cadena5): Llama a contar_vocales para cada cadena. Si alguna tiene dos o más vocales, la imprime; si ninguna las tiene, imprime "No existe".
+- `buscar_cadena_con_vocales`(cadena1, cadena2, cadena3, cadena4, cadena5): Llama a `contar_vocales` para cada cadena. Si alguna tiene dos o más vocales, la imprime; si ninguna las tiene, imprime "No existe".
 
 
 ________________________________________
