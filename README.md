@@ -177,7 +177,7 @@ Para la realización de este programa se separa un número flotante en su parte 
 
 Ingreso: El usuario ingresa un número flotante.
 
-Separación: La parte entera se obtiene con int(), y la decimal restando la parte entera del número original.
+Separación: La parte entera se obtiene con `int()`, y la decimal restando la parte entera del número original.
 
 Descomposición:
 - Para la parte entera, se extraen los dígitos uno por uno usando el operador % 10 y se eliminan con // 10.
@@ -230,7 +230,7 @@ Un numero espejo es un par de numeros donde uno es la version invertida del otro
 
 Para resolver el problema:
 
-+ **Invertir un numero**: Se puede invertir un numero al reves usando operaciones matematicas. Se obtiene el ultimo digito utilizando el modulo `(%)` y se elimina el ultimo digito utilizando la division entera `(//)`. Luego, se construye el numero invertido sumando estos digitos en orden inverso.
++ **Invertir un número**: Se puede invertir un numero al reves usando operaciones matematicas. Se obtiene el ultimo digito utilizando el modulo `(%)` y se elimina el ultimo digito utilizando la division entera `(//)`. Luego, se construye el numero invertido sumando estos digitos en orden inverso.
 + **Comparar los numeros**: Despues de invertir uno de los numeros, se compara con el otro para determinar si son espejos.
 ________________________________________
 
@@ -289,19 +289,11 @@ print(f"Para un error del 0.01%, se necesitan {error_001} términos.")
 
 Para este code se utilizó:
 
-- Función aproximacion_coseno(x, n): Calcula la aproximación de la función coseno usando n términos de la serie de Taylor.
+- Función `aproximacion_coseno(x, n)`: Calcula la aproximación de la función coseno usando n términos de la serie de Taylor.
 
-- Función calcular_error(x, error_deseado): Calcula cuántos términos son necesarios en la serie para que el error relativo entre el coseno calculado y el real sea menor o igual al error_deseado.
+- Función `calcular_error(x, error_deseado)`: Calcula cuántos términos son necesarios en la serie para que el error relativo entre el coseno calculado y el real sea menor o igual al `error_deseado`.
 
-Ejemplo: Se llama a calcular_error para diferentes errores deseados (10%, 1%, 0.1%, 0.01%) y se imprime cuántos términos son necesarios en cada caso.
-
-Este código evita el uso de listas o strings, cumpliendo con tu requisito.
-
-
-
-
-
-
+Ejemplo: Se llama a `calcular_error` para diferentes errores deseados (10%, 1%, 0.1%, 0.01%) y se imprime cuántos términos son necesarios en cada caso.
 
 ________________________________________
 
@@ -419,7 +411,7 @@ else:
 Para este programa utilizamos: 
 1. Entrada del número de elementos: Primero, pedimos al usuario que ingrese la cantidad de números que desea ingresar.
 
-2. Comparación de elementos: Para cada número, comparamos ese número con todos los números que siguen. Si encontramos un número que ya se ingresó antes, cambiamos la variable hay_repetidos a True.
+2. Comparación de elementos: Para cada número, comparamos ese número con todos los números que siguen. Si encontramos un número que ya se ingresó antes, cambiamos la `variable hay_repetidos` a `True`.
 
 3. Salida del resultado: Finalmente, dependiendo de si se encontraron elementos repetidos o no, mostramos el mensaje correspondiente.
 ________________________________________
@@ -459,11 +451,11 @@ def buscar_cadena_con_vocales(cadena1, cadena2, cadena3, cadena4, cadena5):
 
 Este código verifica si alguna de las cinco cadenas tiene dos o más vocales :
 
-- contar_vocales(cadena): Recorre cada carácter de la cadena y cuenta vocales. Si encuentra dos o más, retorna el conteo; si no, sigue contando hasta terminar.
+- `contar_vocales(cadena)`: Recorre cada carácter de la cadena y cuenta vocales. Si encuentra dos o más, retorna el conteo; si no, sigue contando hasta terminar.
 
-- buscar_cadena_con_vocales(cadena1, cadena2, cadena3, cadena4, cadena5): Llama a contar_vocales para cada cadena. Si alguna tiene dos o más vocales, la imprime; si ninguna las tiene, imprime "No existe".
+- `buscar_cadena_con_vocales`(cadena1, cadena2, cadena3, cadena4, cadena5): Llama a contar_vocales para cada cadena. Si alguna tiene dos o más vocales, la imprime; si ninguna las tiene, imprime "No existe".
 
-Este código cumple con el requisito de no utilizar listas ni strings fuera de la entrada de datos.
+
 ________________________________________
 ### Punto 8.
 
