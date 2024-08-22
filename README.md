@@ -474,7 +474,21 @@ else:
     print("La primera lista no contiene elementos que no tenga la segunda lista.")
 ```
 
-**Explicacion:**
+**Explicación:**
+
+Este código define una función llamada diferenciar_elementos que recibe dos listas como parámetros y retorna una nueva lista con los elementos que están en la primera lista pero no en la segunda.
+
+- `def diferenciar_elementos(lista1, lista2)`: Define la función diferenciar_elementos que recibe las listas: lista1 y lista2
+
+
+- `return`: Retorna una nueva lista que contiene los elementos que están en lista1 pero no en lista2. Esto mediante una verificación por iteración. Si no está, se agrega a la nueva lista.
+
+- `lista`: Solicita al usuario que ingrese los elementos de la lista 
+
+- `elementos`: Llama a la función diferenciar_elementos con lista1 y lista2 como argumentos y almacena el resultado en la variable.
+
+- `print`: Si la lista elementos no está vacía, los imprime.
+
 ________________________________________
 ### Punto 9.
 
@@ -504,24 +518,44 @@ print(f"La raíz cúbica del menor número: {raiz_cubica}")
 
 ```
 
-**Explicacion:**
-________________________________________
+**Explicación:**
+
+Este código calcula y muestra varias operaciones matemáticas con una lista de 5 números.
+
+- `import numpy as np`: Se importa la biblioteca NumPy, la cual proporciona funciones para operaciones matemáticas.
+
+- `numeros`: Se solicita al usuario que ingrese 5 números, que se almacenan en una lista. 
+
+- `promedio`: Se calcula el promedio de los números utilizando la función np.mean() de NumPy.
+
+- `mediana`: Se calcula la mediana de los números utilizando la función np.median() de NumPy.
+
+- `promedio`: Se calcula el promedio elevando el producto de los números a la potencia de 1 dividido por la cantidad de números.
+
+- `ascendente`: Se ordenan los números en orden ascendente utilizando la función np.sort() de NumPy.
+
+- `descendente`: Se ordenan los números en orden descendente invirtiendo la lista ordenada ascendente.
+
+- `potencia`: Se calcula la potencia del mayor número elevado al menor número.
+
+- `raiz_cubica`: Se calcula la raíz cúbica del menor número utilizando la función np.cbrt() de NumPy.
+
+
+
+______________________________________
 ### Punto 10.
 **Acumulación**
 
 ```python
 def multiplos_3_ac(lista):
-    # Indicamos una lista vacía para almacenar los múltiplos de 3
+    
     lista_multiplos_de_3 = []
     
-    # Recorremos cada número en la lista proporcionada
     for numero in lista:
-        # Verificamos si el número es múltiplo de 3
+       
         if numero % 3 == 0:
-            # Si es múltiplo de 3, se añade a la lista de resultados
             lista_multiplos_de_3.append(numero)
-    
-    # Lo devolvemos a la lista de múltiplos de 3
+
     return lista_multiplos_de_3
 
 # Ejemplo
@@ -529,8 +563,18 @@ lista_a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 resultado = multiplos_3_ac(lista_a)
 print(resultado) 
 ```
-**Explicacion:**
+**Explicación:**
 
+Este código define una función la cual recibe una lista de números como argumento y devuelve una nueva lista con solo los números que son múltiplos de 3.
+
+
+- `def multiplos_3_ac(lista)`: Se define la función multiplos_3_ac 
+
+- `lista_multiplos_de_3 = []`: Se crea una lista vacía llamada lista_multiplos_de_3 que almacenará los múltiplos de 3.
+
+- `if numero % 3 == 0`: Se verifica si el número actual es múltiplo de 3 utilizando el operador módulo (%). Si el resto de la división del número entre 3 es 0, entonces es múltiplo de 3.
+
+- `lista_multiplos_de_3.append(numero)`: Si el número es múltiplo de 3, se añade a la lista lista_multiplos_de_3 utilizando el método append.
 
 
 
@@ -538,7 +582,7 @@ print(resultado)
 
 ```python
 def multiplos_3_comprension(lista):
-    # Usamos una comprensión de listas para filtrar los múltiplos de 3
+    
     return [numero for numero in lista if numero % 3 == 0]
 
 # Ejemplo
@@ -548,6 +592,20 @@ print(resultado)
 ```
 
 
-**Explicacion:**
-________________________________________
+**Explicación:**
+
+Este código define una función llamada multiplos_3_comprension que utiliza una comprensión de listas para filtrar los múltiplos de 3 en una lista de números.
+
+- `def multiplos_3_comprension(lista):`: Se define la función multiplos_3_comprension que toma una lista como argumento.
+ 
+- `return [numero for numero in lista if numero % 3 == 0]`: Se utiliza una comprensión de listas para crear una nueva lista con solo los números que son múltiplos de 3.
+
+- `numero for numero in lista`: Se itera sobre cada número en la lista lista.
+
+- `if numero % 3 == 0`: Se verifica si el número actual es múltiplo de 3 utilizando el operador módulo (%). Si el resto de la división del número entre 3 es 0, entonces es múltiplo de 3.
+
+- `resultado = multiplos_3_comprension(lista_a)`: Se llama a la función multiplos_3_comprension con la lista lista_a como argumento y se almacena el resultado en la variable resultado.
+
+
+_____________________________________
 
