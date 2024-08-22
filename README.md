@@ -1,7 +1,7 @@
 # Taller-2-API-lados
 ____________________________________ 
 
-## Desarrollo del Taller 2 en la asignatura de Programacion de Computadores - UNAL
+*Desarrollo del Taller 2 en la asignatura de Programacion de Computadores - UNAL*
 Coordial saludo, nuestro grupo de Programacion se llama API-lados, a continuacion presentamos nuestro grandioso logo.
 
 [![Whats-App-Image-2024-02-28-at-9-47-06-AM.jpg](https://i.postimg.cc/W4qjTqyc/Whats-App-Image-2024-02-28-at-9-47-06-AM.jpg)](https://postimg.cc/rdT79scf)
